@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div class="header-icon">
+        <svg viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 11l3 3L22 4"/>
+          <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+        </svg>
+      </div>
+      <h1>Daftar Tugas</h1>
+    </div>
+
+    <div class="input-group">
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Tambahkan tugas baru..."
+        maxlength="50"
+        autocomplete="off"
+      />
+      <button id="addBtn">
+        <!-- Plus icon -->
+        <svg viewBox="0 0 24 24" stroke-width="2.5" stroke-linecap="round">
+          <line x1="12" y1="5" x2="12" y2="19"/>
+          <line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+        Tambah
+      </button>
+    </div>
+
+    <p id="errorMsg"></p>
+
+    <div class="divider"></div>
+    <p class="task-count" id="taskCount">0 tugas</p>
+
+    <ul id="taskList"></ul>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
